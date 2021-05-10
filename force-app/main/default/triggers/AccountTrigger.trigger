@@ -11,6 +11,5 @@ trigger AccountTrigger on Account (before insert, before update) {
             a.ShippingState = a.BillingState;
             a.ShippingCountry = a.BillingCountry;               
         }
-        
 	}
 }
